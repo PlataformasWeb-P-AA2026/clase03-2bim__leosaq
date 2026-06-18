@@ -24,11 +24,11 @@
 <ul>
 {% for p in paises %}
   <li>
-    {{ p.nombre }} - {{ p.capital }} - {{ p.numero_provincia }} provincias - {{ p.numero_habitantes }} habitantes
+    {{ p.nombre }} - [<a href="{% url 'obtener_pais' p.id %}">ver</a>] 
   </li>
 {% endfor %}
 </ul>
 
 <br />
-[<a href="{% url 'crear_pais' %}">agregar país</a>]
+[<a href="{% url 'crear_pais' %}">agregar país</a]>
 

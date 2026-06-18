@@ -47,6 +47,10 @@ def obtener_estudiante(request, id):
     informacion_template = {'estudiante': estudiante}
     return render(request, 'obtener_estudiante.html', informacion_template)
 
+def obtener_pais(request, id):
+    pais = Pais.objects.get(pk=id)
+    informacion_template = {'pais': pais}
+    return render(request, 'obtener_pais.html', informacion_template)
 
 def crear_estudiante(request):
     """
