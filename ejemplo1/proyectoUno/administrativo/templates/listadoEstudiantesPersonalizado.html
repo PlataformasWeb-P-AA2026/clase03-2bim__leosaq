@@ -1,16 +1,30 @@
 <h3>{{ mititulo }}</h3>
 Número de estudiantes {{ numero_estudiantes }}
+
 <hr>
-<br/>
 
 <ul>
-
 {% for e in estudiantes %}
-
   <li>{{e.id}} - {{e.nombre}} - telefono:({{e.cantidad_numero_telefonico}})</li>
-
 {% endfor %}
-
 </ul>
+
+<hr>
+
+<table border="1">
+  <tr>
+    <th>ID</th>
+    <th>Nombre</th>
+    <th>Numero Telefonico</th>
+  </tr>
+
+  {% for e in estudiantes %}
+  <tr>
+    <td>{{e.id}}</td>
+    <td>{{e.nombre}}</td>
+    <td>{{e.cantidad_numero_telefonico}}</td>
+  </tr>
+  {% endfor %}
+</table>
 
 <hr>
