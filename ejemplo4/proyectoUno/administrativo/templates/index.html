@@ -25,7 +25,8 @@
 <ul>
 {% for p in paises %}
   <li>
-    {{ p.nombre }} - [<a href="{% url 'obtener_pais' p.id %}">ver</a>] 
+    {{ p.nombre }} - [<a href="{% url 'obtener_pais' p.id %}">ver</a>] -
+    [<a href="{% url 'editar_pais' p.id %}">editar</a>]
   </li>
 {% endfor %}
 </ul>

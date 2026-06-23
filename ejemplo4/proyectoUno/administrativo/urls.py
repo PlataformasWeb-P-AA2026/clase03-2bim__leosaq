@@ -25,4 +25,7 @@ urlpatterns = [
         
         path('pais/<int:id>', views.obtener_pais,
             name='obtener_pais'),
+        
+        path('editar/pais/<int:id>', views.editar_pais,
+            name='editar_pais'),
  ]
